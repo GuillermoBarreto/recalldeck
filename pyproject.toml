@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recalldeck"
+version = "0.1.0"
+description = "Spaced-repetition flashcards from Markdown study notes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Guillermo Barreto" }]
+
+[project.scripts]
+recalldeck = "recalldeck.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["recalldeck*"]
